@@ -12,9 +12,12 @@ pandas = "^2.1.2"
 tiktoken = "^0.5.1"
 scipy = "^1.11.3"
 loguru = "^0.7.2"
+mwclient = "^0.10.1"
+mwparserfromhell = "^0.6.5"
 
 [tool.poetry.scripts]
 qa = "llm_bootcamp.question_answering:main"
+ew = "llm_bootcamp.embed_wikipedia:main"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.4"
