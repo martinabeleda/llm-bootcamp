@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "llm-bootcamp"
+version = "0.1.0"
+description = ""
+authors = ["martinabeleda <martin.abeleda@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+openai = "^1.1.1"
+pandas = "^2.1.2"
+tiktoken = "^0.5.1"
+scipy = "^1.11.3"
+
+[tool.poetry.scripts]
+main = "llm_bootcamp.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
