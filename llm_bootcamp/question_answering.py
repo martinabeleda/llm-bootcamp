@@ -1,3 +1,12 @@
+"""Question ansering using embeddings-based search
+
+This script implements a simple question answering pipeline based on pre-computed
+embeddings. This is based on the tutorial from the OpenAI cookbook
+
+See:
+- https://cookbook.openai.com/examples/question_answering_using_embeddings
+"""
+
 import ast
 from typing import Callable
 
@@ -16,7 +25,7 @@ client = OpenAI(
 
 EMBEDDINGS_PATH = "https://cdn.openai.com/API/examples/data/winter_olympics_2022.csv"
 EMBEDDING_MODEL = "text-embedding-ada-002"
-GPT_MODEL = "gpt-3.5-turbo"
+GPT_MODEL = "gpt-4"
 
 
 def strings_ranked_by_relatedness(
