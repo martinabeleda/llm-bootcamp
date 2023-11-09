@@ -18,6 +18,7 @@ jupyter = ">=1.0.0"
 wikipedia = "^1.4.0"
 langchain = "*"
 canopy-sdk = "^0.1.2"
+datasets = "^2.14.6"
 
 [tool.poetry.scripts]
 qa = "llm_bootcamp.question_answering:main"
