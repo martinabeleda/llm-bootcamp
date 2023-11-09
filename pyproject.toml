@@ -7,21 +7,25 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
-openai = "^1.1.1"
-pandas = "^2.1.2"
-tiktoken = "^0.5.1"
-scipy = "^1.11.3"
-loguru = "^0.7.2"
-mwclient = "^0.10.1"
-mwparserfromhell = "^0.6.5"
+openai = "<1.0"
+pandas = "*"
+tiktoken = "*"
+scipy = "*"
+loguru = "*"
+mwclient = "*"
+mwparserfromhell = "*"
+jupyter = ">=1.0.0"
+wikipedia = "^1.4.0"
+langchain = "*"
+canopy-sdk = "^0.1.2"
 
 [tool.poetry.scripts]
 qa = "llm_bootcamp.question_answering:main"
 ew = "llm_bootcamp.embed_wikipedia:main"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.1.4"
-pre-commit = "^3.5.0"
+ruff = "*"
+pre-commit = "*"
 
 [build-system]
 requires = ["poetry-core"]
